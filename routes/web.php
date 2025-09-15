@@ -23,6 +23,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 Route::get('/test', function () {
     return 'Hello,Laravel 11!';
 });

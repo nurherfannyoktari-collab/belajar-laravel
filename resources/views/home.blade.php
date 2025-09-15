@@ -4,5 +4,5 @@
 
 @section('content')
     <h1>Selamat Datang!</h1>
-    <p>Ini adalah halaman home</p>
+    <h3>Ini adalah halaman home</h3>
 @endsection
