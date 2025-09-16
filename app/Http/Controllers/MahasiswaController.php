@@ -19,5 +19,23 @@ class MahasiswaController extends Controller
         return Mahasiswa::all();
     }
 
+    // update data
+public function update(Request $request, $id)
+{
+    $mahasiswa = Mahasiswa::findOrFail($id);
+    $mahasiswa->update($request->all());
+
+    return $mahasiswa;
+}
+
+// delete data
+public function destroy($id)
+{
+    $mahasiswa = Mahasiswa::findOrFail($id);
+    $mahasiswa->delete();
+
+    return $mahasiswa;
+}
+
 
 }
