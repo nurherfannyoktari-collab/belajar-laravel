@@ -83,3 +83,4 @@ Route::post('/siswa/{id}/update', [SiswaController::class, 'update'])->name('sis
 Route::post('/siswa/{id}/delete', [SiswaController::class, 'destroy'])->name('siswa.destroy');
 
 
+Route::resource('siswa', \App\Http\Controllers\SiswaController::class);
